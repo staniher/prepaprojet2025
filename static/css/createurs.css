@@ -1,0 +1,117 @@
+/* Styles pour la page des créateurs */
+#creatorsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.creator-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.creator-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0; /* Photo carrée */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.creator-card img:hover {
+    transform: scale(1.1);
+}
+
+.creator-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.creator-card p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.creator-card .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.creator-card .social-links a {
+    color: #4CAF50;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.creator-card .social-links a:hover {
+    color: #45a049;
+}
+header {
+    background-color: #302824;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header p {
+    font-size: 1.0rem;
+}
+.btn-return {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.btn-return:hover {
+    background-color: #0056b3;
+}
+footer {
+    background-color: #302824;
+    color: white;
+    padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 30px;
+padding-right: 30px;    
+}
+.endu {
+    background-color: #493f3a;
+    padding: 20px;
+}
+.endu img {
+    width: 95%;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    gap: 10px;
+}

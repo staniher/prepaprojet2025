@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membres de la Promotion</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header>
+        <h1>Membres de la Promotion</h1>
+        <p>Découvrez les joueurs de foot, de basket et les représentants de la promotion.</p>
+    </header>
+    <a href="{{ url_for('index') }}" class="btn btn-return">Retour au site principal</a>
+
+    <main>
+        <div id="promotionPhotos" class="grid-container"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Promotion prepa 2025-2026 by big lion.</p>
+    </footer>
+
+    <script src="{{url_for('static', filename='js/membres_script.js') }}"></script>
+</body>
+</html>

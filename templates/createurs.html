@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créateurs du Site</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/createurs.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Créateurs du Site</h1>
+        <p>Découvrez les personnes derrière ce projet.</p>
+    </header>
+
+    <!-- Retour vers l'index via Flask -->
+    <a href="{{ url_for('index') }}" class="btn btn-return">Retour au site principal</a>
+   
+    <main>
+        <div id="creatorsContainer" class="grid-container"></div>
+        
+        <p style="text-align: center; margin: 20px; font-size: 1.1rem; color: #555;">
+            Derrière ce site se cachent deux esprits créatifs et passionnés : <b>LE GRAND SIMBA</b> et <b>JUSTIN KAMBALE M</b>.
+            Étudiants en année préparatoire à l’Université Adventiste de Cosendai (UAC), nous nous préparons à embrasser une carrière en génie informatique...
+        </p>
+
+        <div class="endu">
+            <img src="{{url_for('static', filename='images/simba.png')}}" 
+                 alt="LE GRAND SIMBA - Peintre décorateur, Designer et étudiant en génie informatique" >
+        </div>
+
+        <div class="endu">
+            <img src="{{ url_for('static', filename='images/justin.png') }}" 
+                 alt="JUSTIN KAMBALE M - Designer et étudiant en génie informatique">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Promotion PREPA 2025-2026. LE GRAND SIMBA.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/createurs.js') }}"></script>
+</body>
+</html>

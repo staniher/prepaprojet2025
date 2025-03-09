@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Recherche d'Étudiants</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/recherche-styles.css')}}">
+</head>
+<body>
+    
+        <!-- Bouton pour retourner au site principal -->
+        <a href="/" class="btn btn-return">Retour au site principal</a>
+
+        <h1>Recherche d'Étudiants</h1>
+        <input type="text" id="searchInput" placeholder="Rechercher un étudiant...">
+        <button onclick="searchStudent()">Rechercher</button>
+        
+        <div id="studentInfo" class="hidden">
+            <img id="studentPhoto" src="{{url_for('static', filename='images/default.png')}}" alt="Photo de l'étudiant" width="100">
+            <h2 id="studentName"></h2>
+            <div id="studentDetails"></div>
+        </div>
+
+        <div id="contributionsInfo" class="hidden"></div>
+        
+
+        <!-- Section pour que l'admin partage un message public -->
+        <div id="adminPublicMessage">
+            <h3>Partager un message public</h3>
+            <form id="publicMessageForm">
+                <input type="password" id="adminPassword" placeholder="Mot de passe admin" required>
+                <textarea id="publicMessageInput" placeholder="Entrez votre message public..." required></textarea>
+                <button type="submit">Publier</button>
+            </form>
+            <p id="publicMessageDisplay"></p>
+        </div>
+        <div id="adminOptions" class="hidden">
+            <!-- Les options admin seront injectées ici par JavaScript -->
+        </div>
+        <!-- envoyer un messge a l'admin -->
+        <!-- afficher le messge de l'etudient -->
+ <div id="studentMessages" class="hidden"></div>
+
+        <!-- Affichage de la somme totale des contributions -->
+        <div id="totalContributions">
+            <h3>Total des Contributions</h3>
+            <p id="totalAmount">0 FC</p>
+        </div>
+
+        <div id="contributionsInfo" class="hidden"></div>
+        <button onclick="sendMessageToAdmin()" style="background-color: #2196F3;color:wite;">Envoyer un messge de reclamation à sec VICKY !</button>
+       
+        
+    <script src="{{url_for('static', filename='js/recherche-script.js')}}"></script>
+</body>
+</html>

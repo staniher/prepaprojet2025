@@ -1,0 +1,395 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0,3s;
+}
+nav ul li a:hover {
+    color: #e46504;
+}
+
+.section-content {
+    display: none;
+    padding: 20px;
+}
+
+.section-content.active {
+    display: block;
+    text-align: center;
+   
+}
+.orange {
+    text-align: center;
+    color: #e46504;
+    font-size: large;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1 {
+    text-align: center;
+    color: #e46504;
+}
+
+.apropos-container {
+    width: 50%;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 8px;
+}
+
+#searchInput {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    font-size: 18px;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#studentInfo {
+    text-align: center;
+    padding: 20px;
+}
+
+#studentPhoto {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 6px solid #222;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+#studentDetails {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: typing 2s steps(40) forwards;
+}
+.kazi img {
+    margin: 10px;
+    width: 85%;
+    height: auto;
+    
+}
+.kazi2 img {
+    margin: 0;
+    width: 95%;
+    height: auto;
+    
+}
+.commentaire {
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.commentaires {
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.commentairess {
+    text-align: center;
+    color: #f4f4f4;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+footer {
+    background-color: #222;
+    color: antiquewhite;
+    text-align: center;
+    padding: 20px;
+}
+.GENIE {
+    text-align: left;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.fete {
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+    border-radius: 10px;
+}
+.youtube {
+    text-align: center;
+}
+.videoos {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 7px;
+    gap: 7px;
+}
+.jaune {
+    text-align: center;
+    color: #04171d;
+}
+.jaunes {
+    text-align: center;
+    color: #ffffff;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.TITRE {
+    background-color: #222;
+    width: 100vw;
+    margin: 0;
+    padding: 15px;
+    display: block;
+    text-align: center;  
+}
+
+.polo {
+    text-decoration: none;
+    color: rgb(19, 41, 61);
+}
+#maVideo {
+    display: block;
+    margin: 20px auto; /* Centre la vidéo */
+    width: 100%;
+    cursor: pointer; /* Change le curseur pour montrer qu'on peut cliquer */
+} 
+/* Style du bouton */
+.topButton {
+    position: fixed; /* Le bouton reste visible même lors du défilement */
+    bottom: 20px; /* Distance du bas de la page */
+    right: 20px; /* Distance du côté droit */
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.topButton:hover {
+    background-color: #b30000;
+}
+.nom-avec-barres {
+    text-align: center;
+}
+
+.nom-avec-barres hr {
+    width: 100%; /* Longueur des barres */
+    border: none;
+    border-top: 2px solid rgb(60, 60, 60); /* Épaisseur et couleur */
+    margin: 5px auto; /* Espacement vertical */
+}
+
+.nom-avec-barres span {
+    font-weight: bold;
+    font-size: 18px;
+    display: block; /* Met le texte sur sa propre ligne */
+}
+.kavideo {
+    background-color: #222;
+    background-size: cover;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+/* Style général du footer */
+footer {
+    background-color: #222; /* Fond du footer */
+    color: white; /* Couleur du texte */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Conteneur des éléments du footer */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+/* Chaque élément du footer */
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.suka {
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Cercle autour des icônes */
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background-color: white; /* Couleur du cercle */
+    color: #222; /* Couleur de l'icône */
+    border-radius: 50%; /* Rend l’icône circulaire */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Texte sous l’icône */
+.footer-item p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Trait fin entre les éléments */
+.separator {
+    width: 1px;
+    height: 40px;
+    background-color: white;
+}
+.btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+.clickable-image {
+    width: 200px;  
+    cursor: pointer;  
+    transition: transform 0.3s;
+}
+
+.clickable-image:hover {
+    transform: scale(1.1); 
+}
+
+ /*Style de la boîte modale */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+/*Style de l’image agrandie */
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+ /* Bouton de fermeture */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.member-card {
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.member-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.member-card p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* Bouton pour retourner en haut de la page */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none; /* Caché par défaut */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+#backToTop:hover {
+    background-color: #45a049;
+}
+
